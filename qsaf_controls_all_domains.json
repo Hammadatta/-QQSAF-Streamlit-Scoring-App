@@ -1,0 +1,272 @@
+{
+  "Domain 1: Prompt Injection Protection": [
+    [
+      "QSAF-PI-001",
+      "Static pattern blacklist detection"
+    ],
+    [
+      "QSAF-PI-002",
+      "Dynamic LLM prompt analysis"
+    ],
+    [
+      "QSAF-PI-003",
+      "Semantic embedding comparison"
+    ],
+    [
+      "QSAF-PI-004",
+      "Risk scoring based on instruction hijack likelihood"
+    ],
+    [
+      "QSAF-PI-005",
+      "Multi-phase prompt inspection"
+    ],
+    [
+      "QSAF-PI-006",
+      "Escalation routing for toxic prompts"
+    ],
+    [
+      "QSAF-PI-007",
+      "Token anomaly threshold alerts"
+    ]
+  ],
+  "Domain 2: Role & Context Manipulation": [
+    [
+      "QSAF-RC-001",
+      "Detects unauthorized role-switching attempts"
+    ],
+    [
+      "QSAF-RC-002",
+      "Flags impersonation or prompt identity shifts"
+    ],
+    [
+      "QSAF-RC-003",
+      "Verifies system role continuity across sessions"
+    ],
+    [
+      "QSAF-RC-004",
+      "Tracks conversational context drift"
+    ],
+    [
+      "QSAF-RC-005",
+      "Guards against session pivoting via system prompts"
+    ],
+    [
+      "QSAF-RC-006",
+      "Logs role assertion commands"
+    ],
+    [
+      "QSAF-RC-007",
+      "Analyzes nested system prompt injection vectors"
+    ]
+  ],
+  "Domain 3: Plugin Abuse Monitoring": [
+    [
+      "QSAF-PL-001",
+      "Whitelist enforcement for tool calls"
+    ],
+    [
+      "QSAF-PL-002",
+      "Track command-level plugin execution"
+    ],
+    [
+      "QSAF-PL-003",
+      "Restrict sensitive plugin use via policy"
+    ],
+    [
+      "QSAF-PL-004",
+      "Anomaly detection in tool execution time"
+    ],
+    [
+      "QSAF-PL-005",
+      "Correlate tool usage with user prompt intent"
+    ],
+    [
+      "QSAF-PL-006",
+      "Rate-limit plugin execution frequency"
+    ],
+    [
+      "QSAF-PL-007",
+      "Terminate session on policy breach"
+    ]
+  ],
+  "Domain 4: Output Risk & Response Control": [
+    [
+      "QSAF-OR-001",
+      "Content filter for jailbreak or illegal content"
+    ],
+    [
+      "QSAF-OR-002",
+      "Flag hallucinated facts in responses"
+    ],
+    [
+      "QSAF-OR-003",
+      "Token-based watermarking for response traceability"
+    ],
+    [
+      "QSAF-OR-004",
+      "Sensitivity scoring of LLM responses"
+    ],
+    [
+      "QSAF-OR-005",
+      "Block or reroute risky content"
+    ],
+    [
+      "QSAF-OR-006",
+      "Prompt-response correlation analysis"
+    ],
+    [
+      "QSAF-OR-007",
+      "Tone and sentiment deviation tracking"
+    ]
+  ],
+  "Domain 5: Behavioral Anomaly Detection": [
+    [
+      "QSAF-BA-001",
+      "Session entropy score"
+    ],
+    [
+      "QSAF-BA-002",
+      "Prompt embedding drift detector"
+    ],
+    [
+      "QSAF-BA-003",
+      "Response volatility monitor"
+    ],
+    [
+      "QSAF-BA-004",
+      "Repeated intent mutation heuristic"
+    ],
+    [
+      "QSAF-BA-005",
+      "Time-based usage anomalies"
+    ],
+    [
+      "QSAF-BA-006",
+      "Plugin execution pattern deviance"
+    ],
+    [
+      "QSAF-BA-007",
+      "Unified behavioral risk score"
+    ]
+  ],
+  "Domain 6: Payload Integrity & Signing": [
+    [
+      "QSAF-PI-001",
+      "Prompt hash signing"
+    ],
+    [
+      "QSAF-PI-002",
+      "Response payload signing"
+    ],
+    [
+      "QSAF-PI-003",
+      "Plugin request signature enforcement"
+    ],
+    [
+      "QSAF-PI-004",
+      "Signature verification middleware"
+    ],
+    [
+      "QSAF-PI-005",
+      "Nonce/replay token control"
+    ],
+    [
+      "QSAF-PI-006",
+      "Hash chain lineage"
+    ],
+    [
+      "QSAF-PI-007",
+      "Invalid signature escalation"
+    ]
+  ],
+  "Domain 7: Source Attribution & RAG Monitoring": [
+    [
+      "QSAF-SA-001",
+      "Track document source in RAG systems"
+    ],
+    [
+      "QSAF-SA-002",
+      "Compare LLM response to top-K retrieved docs"
+    ],
+    [
+      "QSAF-SA-003",
+      "Calculate hallucination likelihood score"
+    ],
+    [
+      "QSAF-SA-004",
+      "Flag mismatch between retrieval and output"
+    ],
+    [
+      "QSAF-SA-005",
+      "Log and alert for non-attributable responses"
+    ],
+    [
+      "QSAF-SA-006",
+      "Embed source trust rating into response"
+    ],
+    [
+      "QSAF-SA-007",
+      "Auto-disable RAG pipeline upon anomaly"
+    ]
+  ],
+  "Domain 8: Data Governance & Retention": [
+    [
+      "QSAF-DG-001",
+      "Prompt & response TTL policies"
+    ],
+    [
+      "QSAF-DG-002",
+      "Embedding store expiry rules"
+    ],
+    [
+      "QSAF-DG-003",
+      "Data classification tagging"
+    ],
+    [
+      "QSAF-DG-004",
+      "Log retention governance"
+    ],
+    [
+      "QSAF-DG-005",
+      "Right-to-erase (GDPR) compliance"
+    ],
+    [
+      "QSAF-DG-006",
+      "Retention-aware monitoring"
+    ],
+    [
+      "QSAF-DG-007",
+      "Sensitive data auto-deletion"
+    ]
+  ],
+  "Domain 9: Cross-Environment Defense": [
+    [
+      "QSAF-CE-001",
+      "Federated agent sync"
+    ],
+    [
+      "QSAF-CE-002",
+      "Tenant-aware log routing"
+    ],
+    [
+      "QSAF-CE-003",
+      "Isolated risk scoring per tenant"
+    ],
+    [
+      "QSAF-CE-004",
+      "Cross-node signature validation"
+    ],
+    [
+      "QSAF-CE-005",
+      "Shadow agent heartbeat detection"
+    ],
+    [
+      "QSAF-CE-006",
+      "Coordinated alert response"
+    ],
+    [
+      "QSAF-CE-007",
+      "Multi-cloud policy synchronization"
+    ]
+  ]
+}
