@@ -43,6 +43,6 @@ st.markdown("## 📊 Scoring Summary")
 df = pd.DataFrame(results)
 st.dataframe(df)
 
-# Export
+# Export results as CSV
 csv = df.to_csv(index=False).encode("utf-8")
 st.download_button("📥 Download CSV", csv, "qsaf_scores.csv", "text/csv")
