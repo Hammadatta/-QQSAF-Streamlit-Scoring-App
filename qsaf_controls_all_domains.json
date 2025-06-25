@@ -151,31 +151,31 @@
   ],
   "Domain 6: Payload Integrity & Signing": [
     [
-      "QSAF-PI-001",
+      "QSAF-IS-001",
       "Prompt hash signing"
     ],
     [
-      "QSAF-PI-002",
+      "QSAF-IS-002",
       "Response payload signing"
     ],
     [
-      "QSAF-PI-003",
+      "QSAF-IS-003",
       "Plugin request signature enforcement"
     ],
     [
-      "QSAF-PI-004",
+      "QSAF-IS-004",
       "Signature verification middleware"
     ],
     [
-      "QSAF-PI-005",
+      "QSAF-IS-005",
       "Nonce/replay token control"
     ],
     [
-      "QSAF-PI-006",
+      "QSAF-IS-006",
       "Hash chain lineage"
     ],
     [
-      "QSAF-PI-007",
+      "QSAF-IS-007",
       "Invalid signature escalation"
     ]
   ],
