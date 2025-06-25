@@ -2,12 +2,14 @@
 import streamlit as st
 import pandas as pd
 import json
+from pathlib import Path
 
 st.set_page_config(page_title="QSAF Scoring App", layout="wide")
 st.title("🔐 QSAF Scoring App – Full Framework")
 
 # Load QSAF Controls
-with open("qsaf_controls_all_domains.json", "r") as f:
+controls_file = Path(__file__).resolve().parent / "qsaf_controls_all_domains.json"
+with open(controls_file, "r") as f:
     qsaf_domains = json.load(f)
 
 # Domain Selector
